@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail} from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -34,35 +34,10 @@ export const Footer = () => {
             </a>
           </div>
 
-          {/* Quick Links */}
-          <nav className="flex flex-wrap items-center justify-center gap-6">
-            <a href="#home" className="text-muted-foreground hover:text-primary transition-colors">
-              Home
-            </a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
-              About
-            </a>
-            <a href="#skills" className="text-muted-foreground hover:text-primary transition-colors">
-              Skills
-            </a>
-            <a href="#projects" className="text-muted-foreground hover:text-primary transition-colors">
-              Projects
-            </a>
-            <a href="#experience" className="text-muted-foreground hover:text-primary transition-colors">
-              Experience
-            </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
-              Contact
-            </a>
-          </nav>
-
           {/* Copyright */}
           <div className="text-center space-y-2">
-            <p className="text-muted-foreground flex items-center justify-center gap-2">
-              Built with <Heart size={16} className="text-accent" fill="currentColor" /> using MERN Stack
-            </p>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} MERN Developer Portfolio. All rights reserved.
+              © {new Date().getFullYear()} Muhammad Kamran Imtiaz. All rights reserved.
             </p>
           </div>
         </div>

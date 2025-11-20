@@ -1,39 +1,26 @@
 import { Badge } from '@/components/ui/badge';
-
+import { Code2, Database, Server, Zap } from 'lucide-react';
 export const Skills = () => {
-  const skillCategories = [
+const highlights = [
     {
-      category: 'Frontend',
-      skills: [
-        'React.js',
-        'JavaScript',
-        'TypeScript',
-        'HTML5',
-        'CSS3',
-        'Tailwind CSS',
-        'Redux',
-        'Next.js',
-      ],
+      icon: Code2,
+      title: 'Frontend Development',
+      description: 'Building responsive and interactive UIs with React.js',
     },
     {
-      category: 'Backend',
-      skills: [
-        'Node.js',
-        'Express.js',
-        'REST APIs',
-        'GraphQL',
-        'Socket.io',
-        'JWT',
-        'Passport.js',
-      ],
+      icon: Server,
+      title: 'Backend Development',
+      description: 'Creating robust APIs with Node.js and Express.js',
     },
     {
-      category: 'Database',
-      skills: ['MongoDB', 'Mongoose', 'PostgreSQL', 'Redis', 'Firebase'],
+      icon: Database,
+      title: 'Database Management',
+      description: 'Designing scalable databases with MongoDB',
     },
     {
-      category: 'Tools & Others',
-      skills: ['Git', 'GitHub', 'Docker', 'AWS', 'Postman', 'VS Code', 'NPM', 'Webpack'],
+      icon: Zap,
+      title: 'Performance',
+      description: 'Optimizing applications for speed and efficiency',
     },
   ];
 
@@ -47,29 +34,20 @@ export const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {skillCategories.map((category, index) => (
-            <div
-              key={index}
-              className="glass-card p-6 rounded-xl hover-lift space-y-6"
-            >
-              <h3 className="text-xl font-bold text-primary">{category.category}</h3>
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <Badge
-                    key={skillIndex}
-                    variant="secondary"
-                    className="bg-secondary/20 text-secondary hover:bg-secondary/30 transition-colors"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
+        <div className="grid grid-cols-2 gap-6">
+            {highlights.map((item, index) => (
+              <div
+                key={index}
+                className="glass-card p-6 rounded-xl hover-lift text-center space-y-4"
+              >
+                <div className="w-12 h-12 mx-auto bg-gradient-primary rounded-lg flex items-center justify-center">
+                  <item.icon className="text-primary-foreground" size={24} />
+                </div>
+                <h3 className="font-semibold text-foreground">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.description}</p>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* MERN Stack Highlight */}
+            ))}
+          </div>
         <div className="mt-16 text-center">
           <div className="glass-card p-8 rounded-2xl max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-primary mb-6">MERN Stack Expertise</h3>

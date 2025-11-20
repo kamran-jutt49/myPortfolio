@@ -1,13 +1,10 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Link, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const Hero = () => {
   return (
     <section
-      id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16"
-    >
-      {/* Animated Background */}
+      id="home"className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       <div className="absolute inset-0 bg-gradient-hero">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary rounded-full filter blur-3xl animate-pulse"></div>
@@ -16,9 +13,12 @@ export const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center space-y-8 animate-fade-in-up">
-          <div className="space-y-4">
-            <p className="text-primary text-lg font-mono">Hi, I'm</p>
+        <div className="text-center space-y-8 animate-fade-in-up mt-10">
+          <div className="space-y-5 mt-10">
+            <p className="text-primary text-2xl font-mono">Hi, I'm</p>
+            <p className='text-primary text-4xl  font-bold '>
+              Muhammad Kamran Imtiaz
+            </p>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold gradient-text">
               MERN Stack Developer
             </h1>

@@ -6,8 +6,6 @@ const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Experience', href: '#experience' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -32,7 +30,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#home" className="text-2xl font-bold gradient-text">
-            Portfolio
+            DevLab
           </a>
 
           {/* Desktop Navigation */}

@@ -10,7 +10,6 @@ export const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
     message: '',
   });
 
@@ -34,7 +33,7 @@ export const Contact = () => {
     });
 
     // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({ name: '', email: '', message: '' });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -67,7 +66,7 @@ export const Contact = () => {
                       href="mailto:contact@example.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      contact@example.com
+                      kamranimtiaz025@gmail.com
                     </a>
                   </div>
                 </div>
@@ -82,7 +81,7 @@ export const Contact = () => {
                       href="tel:+1234567890"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      +1 (234) 567-890
+                      03124426857
                     </a>
                   </div>
                 </div>
@@ -93,7 +92,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Location</p>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">Faisalabad, Punjab, Pakistan</p>
                   </div>
                 </div>
               </div>
@@ -139,21 +138,6 @@ export const Contact = () => {
                   onChange={handleChange}
                   placeholder="your.email@example.com"
                   required
-                  className="bg-muted/50"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                  Subject
-                </label>
-                <Input
-                  id="subject"
-                  name="subject"
-                  type="text"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  placeholder="Project inquiry"
                   className="bg-muted/50"
                 />
               </div>
